@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet');
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none;
+}
+
+body, html {
+  color: #2d3436;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #58B19F;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  font-family: "Cabin", Sans-Serif;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-family: "Roboto Condensed", Sans-Serif;
+  color: #2d3436;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100px;
+  height: 5px;
+  background: #58B19F;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -50px;
+}
+
+.splash {
+  position: relative;
+  font-family: "Roboto Condensed", Sans-Serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  font-size: 24px;
+  background-image: url("https://i.postimg.cc/zGNJgVbx/pexels-ben-mack-5326948.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0;
+  font-weight: normal;
+}
+
+.main-subtitle {
+  margin: 12px 0 60px 0;
+  font-weight: normal;
+  font-family: "Cabin", Sans-Serif;
+}
+
+.btn {
+  padding: 18px 24px 18px 24px;
+  font-size: 14px;
+  background-color: #58B19F;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #4faa98;
+  color: #ffffff;
+}
+
+.about {
+  background-color: #F8EFBA;
+  font-size: 18px;
+}
+
+.gallery {
+  background-color: #F8EFBA;
+}
+
+.section.gallery {
+  padding: 60px 0 0 0;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 72px 0 0 0;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: left;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:before {
+  position: absolute;
+  display: none;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.2;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 90%;
+  transform: translateY(-50%);
+  color: #dfe6e9;
+  font-size: 16px;
+  font-family: "Cabin", Sans-Serif;
+}
+
+.gallery-item:hover:before, .gallery-item:hover figcaption {
+  display: block;
+}
+
+.section-intro {
+  margin: 36px 0 0 0;
+  color: #2d3436;
+  font-family: "Cabin", Sans-Serif;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.feature {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #2d3436;
+  font-size: 40px;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  color: #2d3436;
+  font-size: 21px;
+  font-family: "Roboto Condensed", Sans-Serif;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+  font-family: "Cabin", Sans-Serif;
+}
+
+.features {
+  background-color: #F8EFBA;
+}
+
+.contact {
+  background-color: #F8EFBA;
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 2px solid #58B19F;
+  width: 20%;
+  height: 100;
+  transition: all 0.5s;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-size: 21px;
+  color: #e17055;
+  transition: all 0.5s;
+}
+
+.statementfirst {
+  background-image: url("https://i.postimg.cc/vmw2M79G/pexels-lisa-fotios-1631918.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.statement {
+  background-image: url("https://i.postimg.cc/fLxm9Kjk/pexels-madison-inouye-1527004.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.statement p {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.quotes {
+  background-color: #F8EFBA;
+}
+
+.page-footer {
+  padding: 12px 0;
+  font-size: 18px;
+  background-color: #58B19F;
+  font-family: "Cabin", Sans-Serif;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .features-wrapper {
+    display: block;
+  }
+
+  .feature {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .gallery-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
